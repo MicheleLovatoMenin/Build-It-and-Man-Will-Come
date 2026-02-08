@@ -1,0 +1,115 @@
+Facility Subtype Description,Facility Type ID,Facility Subtype ID,Facility Subtype Name
+,5,5005,Junior Rugby League
+"An oval running track facility with a minimum length of 400m and sprint straight (minimum 100m in length), with optional field-based throwing and jumping facilities (for example High Jump, Long/Triple Jump, Pole Vault, Shot Put, Javelin, Hammer, Discus).",1,1004,Standard Oval Outdoor
+"A standard or freeform outdoor oval running track facility with a minimum length of 100m and maximum length of 399m, sprint straight (minimum 40m), with optional field-based throwing and jumping facilities (for example High Jump, Long/Triple Jump, Pole Vault, Shot Put, Javelin, Hammer, Discus).",1,1005,Mini Outdoor
+"A non-oval outdoor track with a minimum length of 40m. These facilities tend to be a sprint straight but can include “J” shaped running tracks. Optional field-based throwing and jumping facilities (these typically include: High Jump, Long/Triple Jump, Shot Put).",1,1006,Compact Outdoor
+Standalone throwing and/or jumping facility(s) that do not have a running track as part of the facility.,1,1007,Standalone Field
+"Indoor oval track (minimum 200m) and sprint straight (minimum 60m), with optional field event provision, typically: High Jump, Long/Triple Jump, Pole Vault, indoor throws cage for Hammer, Discus and Shot Put and throws net for Javelin.",1,1008,Standalone Oval Indoor
+"Synthetic indoor sprint straight (minimum 60m) with optional field event provision, typically: High Jump, Long/Triple Jump and shot put.",1,1009,Indoor Training
+"No subtype, see Facility Type for description.",2,2001,Health and Fitness Gym
+"No subtype, see Facility Type for description.",3,3002,Indoor Bowls
+Unframed fabric structure which requires inflating to form its shape. Commonly referred to as 'Bubbles'. Can be over existing outdoor courts. Most common type of non-traditional indoor court. ,4,4001,Airhall
+"As above, but only inflated part of the year.",4,4002,Airhall (seasonal)
+Steel frame covered with fabric. Permanent structure which does not require 'inflating'. ,4,4003,Framed Fabric
+Permanent structure which is not fabric. Traditional steel/timber framed and block structure.,4,4004,Traditional
+"FA recommended dimensions: 100m x 64m (106m x 70m with 3m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR) - September 2015 Update.",5,5001,Adult Football
+"FA recommended dimensions: (U13&U14) 82m x 50m (88m x 56m with 3m run offs); (U15&16) 91m x 55m (97m x 61m with 3m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR)-September 2015 Update.",5,5002,Junior Football 11v11
+"A cricket pitch includes at least one wicket, outfield and boundary.
+ECB Recommended dimensions: 
+Single cricket pitch: U13 Junior 19.20m x3.05m, Senior 20.12m x3.05m.
+Distance from boundary to middle stump of pitch in use: Junior 36.58 m (40 yds) 36.58m, Senior 45.72 m (50 yds) min, 82.26 m (90 yds) max.
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR) -September 2015 Update.",5,5003,Cricket
+"RFL recommended dimensions for pitch including in-goal: 116m x 68m (116m x 74m with 3m run off to long sides only).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR)-September 2015 Update.",5,5004,Senior Rugby League
+"RFU recommended dimensions pitch including in-goal: 144m x 70m (154m x 80m with 5m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR)-September 2015 Update.",5,5006,Senior Rugby Union
+,5,5007,Junior Rugby Union
+"AFL recommended dimensions: 165m x 135m oval (172m x 142m with 4m run offs).
+Reference: AFL Preferred Community Facility Guidelines (2024).",5,5008,Australian Rules Football
+"BARFA recommended dimensions: 109.73m x 48.77m (117.05m x 56.09m with 3.66m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR)-September 2015 Update.",5,5009,American Football
+"EH recommended dimensions: 91.4m x 55m (101.4m x 63m with 5m end and 4m side run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR) - September 2015 Update.",5,5010,Hockey
+"EL recommended dimensions: 110m x60m (116m x72m with 3m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR)-September 2015 Update.",5,5011,Lacrosse
+"RE recommended dimensions for Adult - 
+Batting Square only: 20m x12m.
+Play usually takes place without boundaries, but if one is required: adults 50 m and juniors 30 m, measured from front right corner of batting square.
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR)-September 2015 Update.",5,5012,Rounders
+"BBF recommended dimensions for Adult Field -
+Diamond only: 27.43m x 27.43m. 
+Diamond and home run: 99.05m x 99.05m (117.35m x 117.35m with 18.3m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR)-September 2015 Update.",5,5013,Baseball
+"BSF recommended dimensions for Adult Field (slowpitch) -
+Diamond only: 19.81m x 19.81m.
+Diamond and home run: 83.82m x 83.82m (92.96m x 92.96m with 9.14m run offs for foul line to fence line).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR)-September 2015 Update.",5,5014,Softball
+"GAA recommended dimensions: 145-130m x 90-80m.
+Reference: GAA Official Guide (Part 2) 2023.",5,5015,Gaelic Football
+"GAA recommended dimensions: 145-130m x 90-80m.
+Reference: GAA Official Guide (Part 2) 2023.",5,5017,Hurling
+"HPA recommended for full sized field: 275m x180m/146m (unboarded/boarded) (320m x 189m with 27.5m & 9m safety zone).
+Reference: HPA 2023 Outdoor Rules.",5,5018,Polo
+"IBPF recommended dimensions: 150-120m x 100-80m.
+Reference: Official Rules of the International Bicycle Polo Federation.",5,5019,Cycling Polo
+"FA recommended dimensions:
+(U7 &U8): 37M x 27m (43m x 33m with 3m run offs). 
+(U9 &U10):  55m x 37m (61m x 43m with 3m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR)-September 2015 Update.",5,5020,Mini Soccer 7v7
+"RFU recommended dimensions pitch including in-goal:   
+(U7) 30m x 12m (36m x 18m with 3m run offs)
+(U8) 55m x 25m (61m x 31m with 3m run offs)
+(U10) 70m x 35m (80m x 45m with 5m run offs)
+(U11 & U12) 70m x 43m (80m x 53m with 5m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR) - September 2015 Update.",5,5021,Mini Rugby Union
+"FA recommended dimensions (U11 &U12): 73m x 46m (79m x 52m with 3m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR )-September 2015 Update.",5,5022,Junior Football 9v9
+"FA recommended dimensions (U7 &U8): 37m x 27m (43m x 33m with 3m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR) -September 2015 Update.",5,5023,Mini Soccer 5v5
+"RFL recommended dimensions: (U7,U8,U9) 60m x40m (64m x 44m with 2m run offs),  (U10&U11) 80mx50m(84mx54m with 2m run offs).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (OUTDOOR) - September 2015 Update.",5,5024,Mini Rugby League
+"Camanachd Association recommended dimensions: 128m -155m x 64-73m (side run off -4.5m, end run off – 3m)  
+Reference: Sport Scotland Shinty pitch datasheet 016",5,5016,Shinty
+"Main multi-sports hall(s) within site. Minimum size equivalent to 3 marked out badminton courts.
+Dimensions: 18m–70m width and 27m-90m length. Must be marked out for at least 1 badminton court.",6,6001,Main
+This is a multi-sports hall (below the equivalent of 3 badminton courts size) where activities take place that does not qualify as a main hall and is not a purpose-built studio. It can include community/village halls. It should be between the following dimensions: 9-18m width and 17m-26m length. It may or may not be marked out.,6,6002,Activity Hall
+"Marked out with minimum size of 4 badminton courts or 1 basketball court, or 1 netball court or 1 volleyball court. These are buildings which did not start out life as a dedicated sports hall but are now used for that purpose. Typically, the dimensions of the building are much greater than the courts they contain. May include courts marked out in the middle of an indoor velodrome or indoor running track.",6,6003,Barns
+"Indoor only. Principle pool(s) within site. Minimum length is 15m. Pool must be traditional rectangular tank. Where a main pool has had flumes/slides fitted, provided the pool is rectangular in shape, it should be classified as a 'Main/General' pool.",7,7001,Main/General
+"Indoor only. A pool which has a freeform, curved shape on the majority of its sides. These pools are primarily designed for informal recreational swimming and may include flumes, slides, beach areas, water jets, wave machines. Some leisure pools may have been designed to allow lane swimming within a specific area of the pool. These pools should be classified as 'leisure' where the majority of its sides are freeform. If lanes are present, these will be counted, and the length recorded. ",7,7002,Leisure Pool
+"Indoor only. Less than 15m in length, or a secondary pool within site. Smaller and generally shallower than Main pool, and traditionally rectangular in shape. May have stepped/shallow area for infant use. If lanes are present, these will be counted.",7,7003,Learner/Teaching/Training
+Indoor only. Pool specifically designed for diving. Pools are usually square and deeper than main pools.,7,7004,Diving
+Open-air pool. Includes ponds which have roped off section e.g. Hampstead. May be seasonal and only opened for six months of year. When shut status should be marked as temporarily closed.,7,7005,Lido
+A type of artificial grass pitch (normally of 25mm tufted carpet) where the carpet is fully sand-filled to within 2-3 mm of the top of the pile. ,8,8001,Sand Filled
+"A type of artificial grass pitch (normally of woven carpet) where the carpet is not filled with sand. The carpet is usually shorter piled than the sand filled type having a much higher pile density and requiring a regular application of water during matches to reduce player friction and slow the speed of the ball across the surface. Combined with some form of underlay / shock-pad, sometimes integral. The carpets and / or the pad are typically designed to retain the applied water whilst maintaining a free draining characteristic. ",8,8002,Water Based
+"An artificial grass pitch using a longer pile artificial grass carpet, often referred to as a ‘third generation’ or ‘3G’ pitch. Most pitches have a rubber crumb and sand infill within the pile, some may have organic infills such as cork or timber pellets and, in few cases, there may be no infill. Pile length is typically 55-60mm for football and 60-65mm for rugby however, some carpets can be as short as 40mm.",8,8003,Long Pile Carpet
+"A standard par course, with a minimum of 9 holes. ",9,9001,Standard
+"An 18mm tufted carpet where the carpet is only partially filled with sand. The sand is to help stabilise the carpet and retain some moisture in the system. The infill is not normally necessary for the playing performance of the surface.  A sand dressed pitch has a heavier amount of fibres which are more exposed, giving it a greener appearance. ",8,8004,Sand Dressed
+"A course normally consisting of a minimum of 9 holes, where each hole is designed to be completed within 3 strokes by a competent player.",9,9002,Par 3
+A sloped treadmill used for alpine skiing or snowboarding.,11,11004,Indoor Endless
+"A purpose-built studio where classes are held for one or more activities such as group exercise classes, martial arts, yoga etc. Normally has a sprung floor, mirrors and air conditioning. The room may have a partition (a removable, dividing wall) to cater for additional classes or extra space.
+Dance studios can be included where they are regularly used for other fitness based activities.",12,12001,Fitness Studio
+"A purpose-built studio where spinning classes are held. These studios have stationary exercise bikes within them and normally have mirrored walls, television/projection screens and air conditioning. 
+Cycle Studios are permanently set up as a cycle/spin studio. Does not include static bikes that are in a general gym area.
+Cycle studios may also have tiered flooring so class members can see teachers/screens more easily.",12,12002,Cycle Studio
+"The court has a glass or transparent back wall.
+ES recommended dimensions: 9.75m x 6.40m x 5.64m(h).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (INDOOR) - September 2015 Update.",13,13001,Glass-backed
+"The court has solid back, side and front wall.
+ES recommended dimensions: 9.75m x 6.40m x 5.64m(h).
+Reference: Sport England Comparative Sizes of Sports Pitches & Courts (INDOOR) - September 2015 Update.",13,13002,Normal
+"No subtype, see Facility Type for description.",17,17001,Tennis Courts
+"A permanent indoor banked arena for track cycling, consisting of two parallel straights joined by two 180-degree bends. The Track surface is usually Nordic or Siberian Pine. The length of a Track is usually 200 or 250 metres, such that a whole number of laps or half laps shall equal a distance of precisely 1 kilometre.",20,20001,Track - Indoor Velodrome
+"A permanent outdoor banked arena for track cycling, consisting of two parallel straights joined by two 180-degree bends. Track length and degree of banking may vary depending on age of the facility. Modern day tracks are usually 250 or 400 metres in length, such that a whole number of laps or half laps equal a distance of precisely 1 kilometre. Whilst some older tracks may have a timber or concrete surface the modern standard is for a tarmacadam surface.",20,20002,Track - Outdoor Velodrome
+"A permanent track capable of hosting a regional level of BMX racing sanctioned by British Cycling. A BMX Race Track can accommodate up to 8 riders who compete side by side to complete a single lap of a course. Riders descend a start hill from behind a lowered gate before completing 3 turns and 4 straights of a course which measures between 200 and 400 metres in length. Tracks include a number of raised obstacles (rollers), jumps and banked corners (berms).",20,20003,BMX - Race Track
+"A permanent BMX track suitable for informal and recreational cycling. These Tracks feature obstacles (rollers), jumps and banked corners (berms) which are reduced in size and scale to those found on a BMX Race Track. Some BMX Pump tracks are suitable to be ridden by mountain bikes. ",20,20004,BMX - Pump Track
+"Permanent mountain bike trails which may include cross-country single track and downhill trails. Trails are graded according to their difficulty from green (easy) to black (severe). Trails can range from single routes or small skills loops measuring a few hundred metres in length to multiple trails forming expansive networks tens of kilometres in length. MTB Trails can be found at a huge number of unmanaged sites such as open access parkland and dedicated venues such as cycle trail centres and bike parks. However, forest tracks, bridleways and national Sustrans cycle routes are excluded.",20,20005,Mountain Bike - Trails
+A permanent oval shaped track which in a race accommodates up to 4 riders who compete side by side. Tracks measure up to 90m in length and are surfaced with graded shale.,20,20006,Cycle Speedway - Track
+"A permanent traffic-free closed road for cycling with a tarmacadam surface. Characterised by straights and sweeping bends, these facilities come in various shapes and sizes. Circuits can support all forms of cycling activity including coaching, recreation and competition. Circuits of 1km or more in length and 6m wide throughout are capable of hosting a regional level of competition sanctioned by British Cycling.",20,20007,Road - Closed Road Cycling Circuit
+A facility dedicated for the use of gymnastics and trampolines,33,33001,Gymnastics Hall
+"Includes covered and uncovered driving bays. Range must have a minimum of 5 driving bays. Ranges based on hire of balls by the bucket, and user does not retrieve balls. Does not include practise areas within golf courses.",9,9003,Driving Range
+"No subtype, see Facility Type for description.",10,10001,Ice Rinks
+Permanent outdoor slope made from an artificial surface.,11,11001,Outdoor Artificial
+Seasonal outdoor snow ski slope which must be equipped with a tow.,11,11002,Outdoor Natural
+Indoor ski slope.,11,11003,Indoor

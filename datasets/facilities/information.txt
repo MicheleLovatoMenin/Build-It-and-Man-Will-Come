@@ -1,0 +1,5 @@
+Active Places Data Version: 2026-01-13 03:30:46
+CSVs Created: 2026-01-13 04:34:22
+Licence: https://www.activeplacespower.com/pages/license
+
+Contains data Copyright Sport England.
