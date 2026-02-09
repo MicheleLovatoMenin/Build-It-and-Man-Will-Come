@@ -29,7 +29,7 @@ A script is provided to automatically check and install the necessary packages: 
 
 The raw datasets are located in the `/dataset` folder. However, for transparency and reproducibility, here are the links to the official sources:
 
-* **Sports Facilities:** Sourced from the [Active Places Power]([https://www.activeplacespower.com](https://www.activeplacespower.com/pages/downloads)) database (Sport England).
+* **Sports Facilities:** Sourced from the [Active Places Power](https://www.activeplacespower.com/pages/downloads) database (Sport England).
 * **Physical Activity:** Sourced from the [Active Lives Survey](https://www.sportengland.org/research-and-data/data/active-lives) (Sport England).
 * **Census Data:** Socio-economic status (NS-SEC), Ethnicity, and Age structure sourced from the [2021 Census](https://www.ons.gov.uk/census) (ONS - Office for National Statistics).
 
