@@ -1,0 +1,11 @@
+geopandas
+pandas
+folium
+branca
+jinja2
+osmnx
+networkx
+matplotlib
+shapely
+contextily
+numpy
