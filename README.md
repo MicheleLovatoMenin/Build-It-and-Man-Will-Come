@@ -27,11 +27,11 @@ A script is provided to automatically check and install the necessary packages: 
 
 ## 📂 Data Pipeline
 
-The raw datasets are located in the `/dataset` folder. However, for transparency and reproducibility, here are the original sources:
+The raw datasets are located in the `/dataset` folder. However, for transparency and reproducibility, here are the links to the official sources:
 
 * **Sports Facilities:** Sourced from the [Active Places Power](https://www.activeplacespower.com) database (Sport England).
-* **Physical Activity:** Sourced from the *Active Lives Survey* (Sport England).
-* **Census Data:** Socio-economic status (NS-SEC), Ethnicity, and Age structure sourced from the *2021 Census* (ONS - Office for National Statistics).
+* **Physical Activity:** Sourced from the [Active Lives Survey](https://www.sportengland.org/research-and-data/data/active-lives) (Sport England).
+* **Census Data:** Socio-economic status (NS-SEC), Ethnicity, and Age structure sourced from the [2021 Census](https://www.ons.gov.uk/census) (ONS - Office for National Statistics).
 
 ### Step 1: Data Cleaning & Merging (Python)
 Run the scripts in the following order to reproduce the final dataset:
