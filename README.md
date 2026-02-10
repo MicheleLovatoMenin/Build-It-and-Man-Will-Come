@@ -58,18 +58,18 @@ Run the scripts in the following order to reproduce the final dataset:
 
 The core visualization tool is the Jupyter Notebook **`interactive_map.ipynb`**. This notebook generates high-detail interactive HTML maps for the entire UK territory.
 
-### 1. The Interactive Atlas
+### 1. The Interactive Maps
 The notebook produces two main map files:
-* **`Physical_Activity_Map.HTML`**
-* **`Sociodemographic_Map.HTML`**
+* **`Physical_Activity_Map.HTML`** for data regarding sports activity (e.g., *Active Adults*, *Inactive Adults*, *Gender Play Gap*...)
+* **`Sociodemographic_Map.HTML`** for data regarding sociodemographic status (*High Social Class*, *Low Social Class*, *Ethnic Minorities*) 
 
 > **⚠️ Download Note:** Due to the high level of detail, these maps cannot be hosted directly on GitHub.
 > You can generate them locally by running the notebook, or download the pre-generated HTML files [here](https://drive.google.com/drive/folders/11xuF48L5iZXWUP08hplKYtS6WMPeO8dn?usp=drive_link).
 
 **How to use the maps:**
-* **Layer Control:** Use the layer selector to toggle variables (e.g., *Active Adults*, *Inactive Adults*, *Gender Gap*...). **Important:** Always deselect the current layer before selecting a new one to avoid visual overlap.
-* **Data Inspection:** Hover over any MSOA to see a popup with specific metrics (Zone ID, Active Adults, Number of Facilities, Diversity Index...).
-* **Facility Zoom:** If you zoom in deeply, the "Sport Sites Locations" layer will reveal individual sport sites. Clicking on a marker shows exactly which facilities are inside.
+* **Layer Control:** Use the layer selector to toggle variables (e.g., *Active Adults*, *Inactive Adults*, *Gender Play Gap*...). **Important:** Always deselect the current layer before selecting a new one to avoid visual overlap.
+* **Data Inspection:** Hover over any MSOA to see a popup with specific metrics (e.g., Zone ID, Active Adults, Number of Facilities, Diversity Index...).
+* **Facility Zoom:** in `Physical_Activity_Map.HTML`, if you zoom in deeply, the "Sport Sites Locations" layer will reveal individual sport sites. Clicking on a marker shows exactly which facilities are inside.
 
 <img width="1197" height="892" alt="immagine" src="https://github.com/user-attachments/assets/57f587f5-445d-4036-a440-7497289fed74" />
 
@@ -78,7 +78,8 @@ The notebook produces two main map files:
 The notebook also performs a walkability analysis:
 * It calculates 10, 20, and 30-minute walking isochrones from the centroid of selected MSOAs (velocity = 4.5 km/h).
 * It computes how many sport sites and facilities are accessible within those timeframes.
-* **Customization:** The notebook is set to analyze 5 sample MSOAs by default, but you can change the MSOA Codes in the script to generate isochrones for any neighborhood in England.
+* Like `Physical_Activity_Map.HTML`, if you zoom in deeply, the map will reveal individual sport sites. Clicking on a marker shows exactly which facilities are inside.
+* **Customization:** The notebook is set to analyze 5 sample MSOAs by default, but you can change the `MSOA_NAME` in the script to generate isochrones for any neighborhood in England.
 * **Output:** Files are saved in `/maps_output` as `isochrone_map_[MSOA_NAME].html`.
 
 <img width="1836" height="897" alt="immagine" src="https://github.com/user-attachments/assets/09e207d3-e96b-4c44-a9b1-91da43e80b2a" />
