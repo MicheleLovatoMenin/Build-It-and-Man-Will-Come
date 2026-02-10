@@ -37,7 +37,7 @@ The raw datasets are located in the `/dataset` folder. However, for transparency
 Run the scripts in the following order to reproduce the final dataset:
 
 1. **`1_data_cleaning_fac.py`**:
-    * *Input:* `facilities.csv`
+    * *Input:* `facilities\facilities.csv`
     * *Output:* `site_fac.csv` (Aggregaes facilities by sites).
 2. **`2_data_cleaning_msoa.py`**:
     * *Input:* `site_fac.csv`
@@ -47,7 +47,7 @@ Run the scripts in the following order to reproduce the final dataset:
     * *Output:* `site_sport.csv` (Merges infrastructure with participation data).
 4. **`4_merging_etn_age_job.py`**:
     * *Input:* `site_sport.csv`, `census_ethnic_msoa.csv`, `census_age_msoa.csv`, `census_job_msoa.csv`
-    * *Output:* **`final_ds`** (The final dataset used for analysis).
+    * *Output:* `final_ds` (The final dataset used for analysis).
 
 ### Step 2: Statistical Analysis (R)
 * **`Descriptive Analysis.R`**: Generates summary statistics and preliminary plots.
@@ -64,16 +64,21 @@ The notebook produces two main map files:
 * **`Sociodemographic_Map.HTML`**
 
 > **⚠️ Download Note:** Due to the high level of detail, these maps cannot be hosted directly on GitHub.
-> You can generate them locally by running the notebook, or download the pre-generated HTML files [here](https://drive.google.com/drive/u/0/folders/11xuF48L5iZXWUP08hplKYtS6WMPeO8dn?q=sharedwith:public%20parent:11xuF48L5iZXWUP08hplKYtS6WMPeO8dn).
+> You can generate them locally by running the notebook, or download the pre-generated HTML files [here](https://drive.google.com/drive/folders/11xuF48L5iZXWUP08hplKYtS6WMPeO8dn?usp=drive_link).
 
 **How to use the maps:**
-* **Layer Control:** Use the layer selector to toggle variables (e.g., *Active Adults*, *Inactive Adults*, *Gender Gap*). **Important:** Always deselect the current layer before selecting a new one to avoid visual overlap.
-* **Data Inspection:** Hover over any MSOA to see a popup with specific metrics (Zone ID, Number of Facilities, Diversity Index, Participation Rates).
-* **Facility Zoom:** If you zoom in deeply, the **"Sport Site Locations"** layer will reveal individual sport sites. Clicking on a marker shows exactly which facilities are inside (e.g., "Gym", "Pool", "Tennis Court").
+* **Layer Control:** Use the layer selector to toggle variables (e.g., *Active Adults*, *Inactive Adults*, *Gender Gap*...). **Important:** Always deselect the current layer before selecting a new one to avoid visual overlap.
+* **Data Inspection:** Hover over any MSOA to see a popup with specific metrics (Zone ID, Active Adults, Number of Facilities, Diversity Index...).
+* **Facility Zoom:** If you zoom in deeply, the "Sport Sites Locations" layer will reveal individual sport sites. Clicking on a marker shows exactly which facilities are inside.
+
+<img width="1197" height="892" alt="immagine" src="https://github.com/user-attachments/assets/57f587f5-445d-4036-a440-7497289fed74" />
+
 
 ### 2. Isochrone Analysis (Walkability)
 The notebook also performs a walkability analysis:
-* It calculates 10, 20, and 30-minute walking isochrones from the centroid of selected MSOAs.
+* It calculates 10, 20, and 30-minute walking isochrones from the centroid of selected MSOAs (velocity = 4.5 km/h).
 * It computes how many sport sites and facilities are accessible within those timeframes.
 * **Customization:** The notebook is set to analyze 5 sample MSOAs by default, but you can change the MSOA Codes in the script to generate isochrones for any neighborhood in England.
-* **Output:** Files are saved in `/maps_output` as `isochrone_map_[MSOA_CODE].html`.
+* **Output:** Files are saved in `/maps_output` as `isochrone_map_[MSOA_NAME].html`.
+
+<img width="1836" height="897" alt="immagine" src="https://github.com/user-attachments/assets/09e207d3-e96b-4c44-a9b1-91da43e80b2a" />
