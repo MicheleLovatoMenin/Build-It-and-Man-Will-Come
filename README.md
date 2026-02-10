@@ -64,7 +64,7 @@ The notebook produces two main map files:
 * **`Sociodemographic_Map.HTML`**
 
 > **⚠️ Download Note:** Due to the high level of detail, these maps cannot be hosted directly on GitHub.
-> You can generate them locally by running the notebook, or download the pre-generated HTML files here: **[INSERT LINK TO GOOGLE DRIVE/DROPBOX HERE]**
+> You can generate them locally by running the notebook, or download the pre-generated HTML files [here](https://drive.google.com/drive/u/0/folders/11xuF48L5iZXWUP08hplKYtS6WMPeO8dn?q=sharedwith:public%20parent:11xuF48L5iZXWUP08hplKYtS6WMPeO8dn).
 
 **How to use the maps:**
 * **Layer Control:** Use the layer selector to toggle variables (e.g., *Active Adults*, *Inactive Adults*, *Gender Gap*). **Important:** Always deselect the current layer before selecting a new one to avoid visual overlap.
