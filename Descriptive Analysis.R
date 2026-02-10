@@ -8,21 +8,21 @@ library(stringr)
 library(ggplot2)
 
 # Set directory
-setwd("C:/Users/miklo/Desktop/Geospatial/Project")
+setwd("C:/Users/miklo/Desktop/Geospatial/Build-It-and-Man-Will-Come")
+# you have to change your directory
 
 ################################################
 ### 1. DATA LOADING
 ################################################
 
-# A. Point Data (Facilities)
+s)
 raw_sites <- read.csv("datasets/site_fac.csv")
 
-# B. Aggregated Data (MSOA with socio-demo vars)
 msoa_data <- read.csv("datasets/final_ds.csv") 
 
 
 ################################################
-### 2. ANATOMY OF SUPPLY (THE "FOOTBALL MONOPOLY")
+### 2. ANATOMY OF SUPPLY
 ################################################
 
 # Legend Decoding
@@ -66,7 +66,7 @@ print("Top 5 Facility Types:")
 print(head(count_by_type, 5))
 
 ################################################
-### 3. "MONO-FOOTBALL" MSOA ANALYSIS (Football Deserts)
+### 3. "MONO-FOOTBALL" MSOA ANALYSIS
 ################################################
 # Question: How many neighborhoods have ONLY football and nothing else?
 

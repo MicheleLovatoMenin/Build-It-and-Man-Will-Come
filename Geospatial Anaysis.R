@@ -3,7 +3,7 @@
 #########################################################################
 
 # LIBRARIES
-library(sf)          
+library(sf)
 library(tmap)        
 library(spdep)       
 library(spatialreg)  
@@ -15,7 +15,8 @@ library(ggplot2)
 #########################################################################
 
 # Set Working Directory
-setwd("C:/Users/miklo/Desktop/Geospatial/Project")
+setwd("C:/Users/miklo/Desktop/Geospatial/Build-It-and-Man-Will-Come")
+# you have to change your directory
 
 # 1. SPATIAL WEIGHTS
 listw_idw <- readRDS("output_models/listw_idw.rds")
@@ -42,19 +43,19 @@ impacts_k50 <- readRDS("output_models/impacts_k50.rds")
 sdem_sites    <- readRDS("output_models/sdem_sites.rds")
 impacts_sites <- readRDS("output_models/impacts_sites.rds")
 
-# 5. INACTIVE ANALYSIS (General)
-sdem_inactive    <- readRDS("output_models/sdem_inactive.rds")
-impacts_inactive <- readRDS("output_models/impacts_inactive.rds")
-
-# 6. DIVERSITY ANALYSIS
+# 5. DIVERSITY ANALYSIS
 sdem_diversity    <- readRDS("output_models/sdem_diversity.rds")
 impacts_diversity <- readRDS("output_models/impacts_diversity.rds")
 
-# 7. NO FOOTBALL
+# 6. NO FOOTBALL
 sdem_no_football <- readRDS("output_models/sdem_no_football.rds")
 impacts_no_football <- readRDS("output_models/impacts_no_football.rds")
 
-# 8. INACTIVE VS DIVERSITY
+# 7. INACTIVE ANALYSIS
+sdem_inactive    <- readRDS("output_models/sdem_inactive.rds")
+impacts_inactive <- readRDS("output_models/impacts_inactive.rds")
+
+# 8. INACTIVE - DIVERSITY
 sdem_inact_div    <- readRDS("output_models/sdem_inact_div.rds")
 impacts_inact_div <- readRDS("output_models/impacts_inact_div.rds")
 
@@ -75,14 +76,15 @@ impacts_female_fac <- readRDS("output_models/impacts_female_fac.rds")
 impacts_gap_fac <- readRDS("output_models/impacts_gap_fac.rds")
 
 # 11. GENDER ANALYSIS: INACTIVE vs FACILITIES
-sdem_gap_inact       <- readRDS("output_models/sdem_gap_inact.rds")
-impacts_gap_inact    <- readRDS("output_models/impacts_gap_inact.rds")
+sdem_gap_inact_fac       <- readRDS("output_models/sdem_gap_inact_fac.rds")
+impacts_gap_inact_fac    <- readRDS("output_models/impacts_gap_inact_fac.rds")
 
 # 12. GENDER ANALYSIS: INACTIVE vs DIVERSITY
 sdem_gap_inact_div       <- readRDS("output_models/sdem_gap_inact_div.rds")
 impacts_gap_inact_div    <- readRDS("output_models/impacts_gap_inact_div.rds")
 
 print("All models and impacts loaded successfully.")
+
 
 
 ################################################
@@ -257,7 +259,6 @@ sdm_naive <- lagsarlm(Active_All_adults ~ Facilities_Inside,
 
 summary(sdm_naive)
 saveRDS(sdm_naive, file = "output_models/sdm_naive.rds")
-
 
 ################################################
 ### 5. FULL SOCIO-ECONOMIC MODEL
@@ -439,7 +440,6 @@ impacts_sites <- impacts(sdem_sites, listw = listw_idw, R = 1000, zero.policy = 
 saveRDS(impacts_sites, file = "output_models/impacts_sites.rds")
 summary(impacts_sites, zstats=TRUE, short=TRUE)
 
-
 ################################################
 ### 10: DIVERSITY INDEX ANALYSIS
 ################################################
@@ -518,69 +518,64 @@ saveRDS(impacts_inact_div, file = "output_models/impacts_inact_div.rds")
 summary(impacts_inact_div, zstats = TRUE, short = TRUE)
 
 ################################################
-### 14. GENDER ANALYSIS (DIVERSITY)
-################################################
-
-formula_male <- Active_Male ~ Diversity_Index_Inside + NS_1_2_prop + NS_4_prop + NS_5_prop + NS_6_7_prop + NS_8_prop + NS_9_prop + Age_35_54_prop + Age_55_74_prop + Age_75._prop + Asian_prop + Black_prop + Mixed_prop + Other_prop
-
-sdem_male_div <- errorsarlm(formula_male, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
-saveRDS(sdem_male_div, file = "output_models/sdem_male_div.rds")
-impacts_male_div <- impacts(sdem_male_div, listw = listw_idw, R = 1000, zero.policy = TRUE)
-saveRDS(impacts_male_div, file = "output_models/impacts_male_div.rds")
-
-formula_female <- Active_Female ~ Diversity_Index_Inside + NS_1_2_prop + NS_4_prop + NS_5_prop + NS_6_7_prop + NS_8_prop + NS_9_prop + Age_35_54_prop + Age_55_74_prop + Age_75._prop + Asian_prop + Black_prop + Mixed_prop + Other_prop
-
-sdem_female_div <- errorsarlm(formula_female, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
-saveRDS(sdem_female_div, file = "output_models/sdem_female_div.rds")
-impacts_female_div <- impacts(sdem_female_div, listw = listw_idw, R = 1000, zero.policy = TRUE)
-saveRDS(impacts_female_div, file = "output_models/impacts_female_div.rds")
-
-formula_gap <- Gender_Gap_Active ~ Diversity_Index_Inside + NS_1_2_prop + NS_4_prop + NS_5_prop + NS_6_7_prop + NS_8_prop + NS_9_prop + Age_35_54_prop + Age_55_74_prop + Age_75._prop + Asian_prop + Black_prop + Mixed_prop + Other_prop
-
-sdem_gap_div <- errorsarlm(formula_gap, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
-saveRDS(sdem_gap_div, file = "output_models/sdem_gap_div.rds")
-impacts_gap_div <- impacts(sdem_gap_div, listw = listw_idw, R = 1000, zero.policy = TRUE)
-saveRDS(impacts_gap_div, file = "output_models/impacts_gap_div.rds")
-
-print("1. Men vs Diversity:")
-summary(impacts_male_div)
-print("2. Women vs Diversity:")
-summary(impacts_female_div)
-print("3. Gender Gap vs Diversity:")
-summary(impacts_gap_div)
-
-################################################
-### 15. GENDER ANALYSIS (FACILITIES)
+### 14. GENDER ANALYSIS (FACILITIES)
 ################################################
 
 formula_male_fac <- Active_Male ~ Facilities_Inside + NS_1_2_prop + NS_4_prop + NS_5_prop + NS_6_7_prop + NS_8_prop + NS_9_prop + Age_35_54_prop + Age_55_74_prop + Age_75._prop + Asian_prop + Black_prop + Mixed_prop + Other_prop
-
 sdem_male_fac <- errorsarlm(formula_male_fac, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
 saveRDS(sdem_male_fac, file = "output_models/sdem_male_fac.rds")
 impacts_male_fac <- impacts(sdem_male_fac, listw = listw_idw, R = 1000, zero.policy = TRUE)
 saveRDS(impacts_male_fac, file = "output_models/impacts_male_fac.rds")
 
 formula_female_fac <- Active_Female ~ Facilities_Inside + NS_1_2_prop + NS_4_prop + NS_5_prop + NS_6_7_prop + NS_8_prop + NS_9_prop + Age_35_54_prop + Age_55_74_prop + Age_75._prop + Asian_prop + Black_prop + Mixed_prop + Other_prop
-
 sdem_female_fac <- errorsarlm(formula_female_fac, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
 saveRDS(sdem_female_fac, file = "output_models/sdem_female_fac.rds")
 impacts_female_fac <- impacts(sdem_female_fac, listw = listw_idw, R = 1000, zero.policy = TRUE)
 saveRDS(impacts_female_fac, file = "output_models/impacts_female_fac.rds")
 
 formula_gap_fac <- Gender_Gap_Active ~ Facilities_Inside + NS_1_2_prop + NS_4_prop + NS_5_prop + NS_6_7_prop + NS_8_prop + NS_9_prop + Age_35_54_prop + Age_55_74_prop + Age_75._prop + Asian_prop + Black_prop + Mixed_prop + Other_prop
-
 sdem_gap_fac <- errorsarlm(formula_gap_fac, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
 saveRDS(sdem_gap_fac, file = "output_models/sdem_gap_fac.rds")
 impacts_gap_fac <- impacts(sdem_gap_fac, listw = listw_idw, R = 1000, zero.policy = TRUE)
 saveRDS(impacts_gap_fac, file = "output_models/impacts_gap_fac.rds")
 
-print("1. Men vs Facilities:")
+summary(sdem_male_fac)
+summary(sdem_female_fac)
+summary(sdem_gap_fac)
+
 summary(impacts_male_fac)
-print("2. Women vs Facilities:")
 summary(impacts_female_fac)
-print("3. Gender Gap vs Facilities:")
 summary(impacts_gap_fac)
 
+################################################
+### 15. GENDER ANALYSIS (DIVERSITY)
+################################################
+
+formula_male <- Active_Male ~ Diversity_Index_Inside + NS_1_2_prop + NS_4_prop + NS_5_prop + NS_6_7_prop + NS_8_prop + NS_9_prop + Age_35_54_prop + Age_55_74_prop + Age_75._prop + Asian_prop + Black_prop + Mixed_prop + Other_prop
+sdem_male_div <- errorsarlm(formula_male, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
+saveRDS(sdem_male_div, file = "output_models/sdem_male_div.rds")
+impacts_male_div <- impacts(sdem_male_div, listw = listw_idw, R = 1000, zero.policy = TRUE)
+saveRDS(impacts_male_div, file = "output_models/impacts_male_div.rds")
+
+formula_female <- Active_Female ~ Diversity_Index_Inside + NS_1_2_prop + NS_4_prop + NS_5_prop + NS_6_7_prop + NS_8_prop + NS_9_prop + Age_35_54_prop + Age_55_74_prop + Age_75._prop + Asian_prop + Black_prop + Mixed_prop + Other_prop
+sdem_female_div <- errorsarlm(formula_female, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
+saveRDS(sdem_female_div, file = "output_models/sdem_female_div.rds")
+impacts_female_div <- impacts(sdem_female_div, listw = listw_idw, R = 1000, zero.policy = TRUE)
+saveRDS(impacts_female_div, file = "output_models/impacts_female_div.rds")
+
+formula_gap <- Gender_Gap_Active ~ Diversity_Index_Inside + NS_1_2_prop + NS_4_prop + NS_5_prop + NS_6_7_prop + NS_8_prop + NS_9_prop + Age_35_54_prop + Age_55_74_prop + Age_75._prop + Asian_prop + Black_prop + Mixed_prop + Other_prop
+sdem_gap_div <- errorsarlm(formula_gap, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
+saveRDS(sdem_gap_div, file = "output_models/sdem_gap_div.rds")
+impacts_gap_div <- impacts(sdem_gap_div, listw = listw_idw, R = 1000, zero.policy = TRUE)
+saveRDS(impacts_gap_div, file = "output_models/impacts_gap_div.rds")
+
+summary(sdem_male_div)
+summary(sdem_female_div)
+summary(sdem_gap_div)
+
+summary(impacts_male_div)
+summary(impacts_female_div)
+summary(impacts_gap_div)
 
 ################################################
 ### 16. GENDER ANALYSIS / INACTIVITY
@@ -595,11 +590,11 @@ formula_gap_inact_fac <- Gender_Gap_Inactive ~ Facilities_Inside +
 
 sdem_gap_inact_fac <- errorsarlm(formula_gap_inact_fac, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
 saveRDS(sdem_gap_inact_fac, file = "output_models/sdem_gap_inact_fac.rds")
+summary(sdem_gap_inact_fac)
 
 impacts_gap_inact_fac <- impacts(sdem_gap_inact_fac, listw = listw_idw, R = 1000, zero.policy = TRUE)
-saveRDS(impacts_gap_inact_fac, file = "output_models/impacts_gap_inact:fac.rds")
+saveRDS(impacts_gap_inact_fac, file = "output_models/impacts_gap_inact_fac.rds")
 summary(impacts_gap_inact_fac, zstats = TRUE, short = TRUE)
-
 
 # Diversity
 
@@ -610,7 +605,10 @@ formula_gap_inact_div <- Gender_Gap_Inactive ~ Diversity_Index_Inside +
 
 sdem_gap_inact_div <- errorsarlm(formula_gap_inact_div, data = map_data_clean, listw = listw_idw, Durbin = TRUE, zero.policy = TRUE)
 saveRDS(sdem_gap_inact_div, file = "output_models/sdem_gap_inact_div.rds")
+summary(sdem_gap_inact_div)
 
 impacts_gap_inact_div <- impacts(sdem_gap_inact_div, listw = listw_idw, R = 1000, zero.policy = TRUE)
 saveRDS(impacts_gap_inact_div, file = "output_models/impacts_gap_inact_div.rds")
 summary(impacts_gap_inact_div, zstats = TRUE, short = TRUE)
+
+

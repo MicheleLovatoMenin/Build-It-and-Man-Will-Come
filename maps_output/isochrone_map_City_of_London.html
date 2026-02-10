@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_032585fac13ec2c44991c744dcdf40c9 {
+                #map_5e0a240b594d24045b77f11590070e92 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -70,9 +70,9 @@
         </tr>
         
             <tr style="border-bottom: 1px solid #eee;">
-                <td style="padding:5px">30</td>
-                <td style="text-align:right; padding:5px">122</td>
-                <td style="text-align:right; padding:5px">354</td>
+                <td style="padding:5px">10</td>
+                <td style="text-align:right; padding:5px">19</td>
+                <td style="text-align:right; padding:5px">58</td>
             </tr>
             
             <tr style="border-bottom: 1px solid #eee;">
@@ -82,20 +82,20 @@
             </tr>
             
             <tr style="border-bottom: 1px solid #eee;">
-                <td style="padding:5px">10</td>
-                <td style="text-align:right; padding:5px">19</td>
-                <td style="text-align:right; padding:5px">58</td>
+                <td style="padding:5px">30</td>
+                <td style="text-align:right; padding:5px">122</td>
+                <td style="text-align:right; padding:5px">354</td>
             </tr>
             </table></div>
     
-            <div class="folium-map" id="map_032585fac13ec2c44991c744dcdf40c9" ></div>
+            <div class="folium-map" id="map_5e0a240b594d24045b77f11590070e92" ></div>
         
 </body>
 <script>
     
     
-            var map_032585fac13ec2c44991c744dcdf40c9 = L.map(
-                "map_032585fac13ec2c44991c744dcdf40c9",
+            var map_5e0a240b594d24045b77f11590070e92 = L.map(
+                "map_5e0a240b594d24045b77f11590070e92",
                 {
                     center: [51.5156177, -0.0919983],
                     crs: L.CRS.EPSG3857,
@@ -112,7 +112,7 @@
 
         
     
-            var tile_layer_740910bedc60c60db0911baf7abd927d = L.tileLayer(
+            var tile_layer_78640888805cd80c35366a0b5bcdcebb = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -129,38 +129,38 @@
             );
         
     
-            tile_layer_740910bedc60c60db0911baf7abd927d.addTo(map_032585fac13ec2c44991c744dcdf40c9);
+            tile_layer_78640888805cd80c35366a0b5bcdcebb.addTo(map_5e0a240b594d24045b77f11590070e92);
         
     
-        function geo_json_e3ffdc4b0ed123d1e4873869532eca7d_styler(feature) {
+        function geo_json_4cdfa5550c267f1ad5c91660059c55ad_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#C6EEFC", "fillColor": "#C6EEFC", "fillOpacity": 0.5, "weight": 2};
             }
         }
 
-        function geo_json_e3ffdc4b0ed123d1e4873869532eca7d_onEachFeature(feature, layer) {
+        function geo_json_4cdfa5550c267f1ad5c91660059c55ad_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_e3ffdc4b0ed123d1e4873869532eca7d = L.geoJson(null, {
-                onEachFeature: geo_json_e3ffdc4b0ed123d1e4873869532eca7d_onEachFeature,
+        var geo_json_4cdfa5550c267f1ad5c91660059c55ad = L.geoJson(null, {
+                onEachFeature: geo_json_4cdfa5550c267f1ad5c91660059c55ad_onEachFeature,
             
-                style: geo_json_e3ffdc4b0ed123d1e4873869532eca7d_styler,
+                style: geo_json_4cdfa5550c267f1ad5c91660059c55ad_styler,
             ...{
 }
         });
 
-        function geo_json_e3ffdc4b0ed123d1e4873869532eca7d_add (data) {
-            geo_json_e3ffdc4b0ed123d1e4873869532eca7d
+        function geo_json_4cdfa5550c267f1ad5c91660059c55ad_add (data) {
+            geo_json_4cdfa5550c267f1ad5c91660059c55ad
                 .addData(data);
         }
-            geo_json_e3ffdc4b0ed123d1e4873869532eca7d_add({"features": [{"geometry": {"coordinates": [[[-0.09835800000000157, 51.4981295], [-0.10140500000000027, 51.4988726], [-0.10180680000000022, 51.498986], [-0.11822259999999991, 51.509715699999994], [-0.11841429999999822, 51.509914800000004], [-0.11949900000000102, 51.511303899999994], [-0.11948849999999965, 51.519017], [-0.1178434000000009, 51.52076050000001], [-0.11377200000000119, 51.5246006], [-0.11224080000000014, 51.526018199999996], [-0.10333020000000034, 51.5304305], [-0.10106639999999943, 51.5312091], [-0.0932167999999997, 51.5326953], [-0.08019600000000031, 51.5310557], [-0.077429300000001, 51.52977919999999], [-0.07540689999999979, 51.5286693], [-0.0713969000000001, 51.52558109999999], [-0.06532690000000095, 51.519195499999995], [-0.06460650000000051, 51.518109900000006], [-0.06422550000000123, 51.514806099999994], [-0.06422439999999942, 51.514724799999996], [-0.06705620000000073, 51.5083865], [-0.06768179999999974, 51.50746199999999], [-0.06977920000000211, 51.50525439999999], [-0.0762493999999994, 51.50165549999999], [-0.0783455000000003, 51.5007709], [-0.07846549999999929, 51.500741000000005], [-0.08573810000000161, 51.4992598], [-0.08823300000000013, 51.4988791], [-0.09712990000000053, 51.4982107], [-0.09835800000000157, 51.4981295]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_4cdfa5550c267f1ad5c91660059c55ad_add({"features": [{"geometry": {"coordinates": [[[-0.09835800000000157, 51.4981295], [-0.10140500000000027, 51.4988726], [-0.10180680000000022, 51.498986], [-0.11822259999999991, 51.509715699999994], [-0.11841429999999822, 51.509914800000004], [-0.11949900000000102, 51.511303899999994], [-0.11948849999999965, 51.519017], [-0.1178434000000009, 51.52076050000001], [-0.11377200000000119, 51.5246006], [-0.11224080000000014, 51.526018199999996], [-0.10333020000000034, 51.5304305], [-0.10106639999999943, 51.5312091], [-0.0932167999999997, 51.5326953], [-0.08019600000000031, 51.5310557], [-0.077429300000001, 51.52977919999999], [-0.07540689999999979, 51.5286693], [-0.0713969000000001, 51.52558109999999], [-0.06532690000000095, 51.519195499999995], [-0.06460650000000051, 51.518109900000006], [-0.06422550000000123, 51.514806099999994], [-0.06422439999999942, 51.514724799999996], [-0.06705620000000073, 51.5083865], [-0.06768179999999974, 51.50746199999999], [-0.06977920000000211, 51.50525439999999], [-0.0762493999999994, 51.50165549999999], [-0.0783455000000003, 51.5007709], [-0.07846549999999929, 51.500741000000005], [-0.08573810000000161, 51.4992598], [-0.08823300000000013, 51.4988791], [-0.09712990000000053, 51.4982107], [-0.09835800000000157, 51.4981295]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-            geo_json_e3ffdc4b0ed123d1e4873869532eca7d.bindTooltip(
+            geo_json_4cdfa5550c267f1ad5c91660059c55ad.bindTooltip(
                 `<div>
                      30 minuts walking
                  </div>`,
@@ -170,38 +170,38 @@
             );
         
     
-            geo_json_e3ffdc4b0ed123d1e4873869532eca7d.addTo(map_032585fac13ec2c44991c744dcdf40c9);
+            geo_json_4cdfa5550c267f1ad5c91660059c55ad.addTo(map_5e0a240b594d24045b77f11590070e92);
         
     
-        function geo_json_e23d5f319d7bb9f2c1e74cce5475e6a2_styler(feature) {
+        function geo_json_c8e25019139263e2a1de9010c385e535_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#8ED4F0", "fillColor": "#8ED4F0", "fillOpacity": 0.5, "weight": 2};
             }
         }
 
-        function geo_json_e23d5f319d7bb9f2c1e74cce5475e6a2_onEachFeature(feature, layer) {
+        function geo_json_c8e25019139263e2a1de9010c385e535_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_e23d5f319d7bb9f2c1e74cce5475e6a2 = L.geoJson(null, {
-                onEachFeature: geo_json_e23d5f319d7bb9f2c1e74cce5475e6a2_onEachFeature,
+        var geo_json_c8e25019139263e2a1de9010c385e535 = L.geoJson(null, {
+                onEachFeature: geo_json_c8e25019139263e2a1de9010c385e535_onEachFeature,
             
-                style: geo_json_e23d5f319d7bb9f2c1e74cce5475e6a2_styler,
+                style: geo_json_c8e25019139263e2a1de9010c385e535_styler,
             ...{
 }
         });
 
-        function geo_json_e23d5f319d7bb9f2c1e74cce5475e6a2_add (data) {
-            geo_json_e23d5f319d7bb9f2c1e74cce5475e6a2
+        function geo_json_c8e25019139263e2a1de9010c385e535_add (data) {
+            geo_json_c8e25019139263e2a1de9010c385e535
                 .addData(data);
         }
-            geo_json_e23d5f319d7bb9f2c1e74cce5475e6a2_add({"features": [{"geometry": {"coordinates": [[[-0.09562910000000056, 51.50384129999999], [-0.09584840000000089, 51.503851], [-0.09682510000000086, 51.504421900000004], [-0.10806370000000025, 51.5111424], [-0.11036520000000043, 51.51391879999998], [-0.1104089999999994, 51.5139973], [-0.11035299999999981, 51.517922799999994], [-0.11033220000000153, 51.517995799999994], [-0.10681499999999983, 51.5204225], [-0.09949860000000052, 51.52510949999999], [-0.09058480000000033, 51.52630649999999], [-0.08503200000000039, 51.5262694], [-0.08398949999999913, 51.525901100000006], [-0.07840940000000027, 51.5217962], [-0.07600210000000047, 51.51925510000001], [-0.0754383999999995, 51.518271], [-0.07370029999999998, 51.5144162], [-0.07372310000000021, 51.5140086], [-0.07622609999999959, 51.509659500000005], [-0.07866720000000095, 51.5080223], [-0.07918990000000004, 51.507798499999986], [-0.08483360000000055, 51.505390199999994], [-0.08676970000000173, 51.504733099999996], [-0.09562910000000056, 51.50384129999999]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_c8e25019139263e2a1de9010c385e535_add({"features": [{"geometry": {"coordinates": [[[-0.09562910000000056, 51.50384129999999], [-0.09584840000000089, 51.503851], [-0.09682510000000086, 51.504421900000004], [-0.10806370000000025, 51.5111424], [-0.11036520000000043, 51.51391879999998], [-0.1104089999999994, 51.5139973], [-0.11035299999999981, 51.517922799999994], [-0.11033220000000153, 51.517995799999994], [-0.10681499999999983, 51.5204225], [-0.09949860000000052, 51.52510949999999], [-0.09058480000000033, 51.52630649999999], [-0.08503200000000039, 51.5262694], [-0.08398949999999913, 51.525901100000006], [-0.07840940000000027, 51.5217962], [-0.07600210000000047, 51.51925510000001], [-0.0754383999999995, 51.518271], [-0.07370029999999998, 51.5144162], [-0.07372310000000021, 51.5140086], [-0.07614660000000012, 51.50962010000001], [-0.07866720000000095, 51.5080223], [-0.07918990000000004, 51.507798499999986], [-0.08483360000000055, 51.505390199999994], [-0.08676970000000173, 51.504733099999996], [-0.09562910000000056, 51.50384129999999]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-            geo_json_e23d5f319d7bb9f2c1e74cce5475e6a2.bindTooltip(
+            geo_json_c8e25019139263e2a1de9010c385e535.bindTooltip(
                 `<div>
                      20 minuts walking
                  </div>`,
@@ -211,38 +211,38 @@
             );
         
     
-            geo_json_e23d5f319d7bb9f2c1e74cce5475e6a2.addTo(map_032585fac13ec2c44991c744dcdf40c9);
+            geo_json_c8e25019139263e2a1de9010c385e535.addTo(map_5e0a240b594d24045b77f11590070e92);
         
     
-        function geo_json_0eb28a81ac3b5aa7cc1a56a1c2f30b73_styler(feature) {
+        function geo_json_970a46ab0ad6bf831daa71008107aefa_styler(feature) {
             switch(feature.id) {
                 default:
                     return {"color": "#5BBEE1", "fillColor": "#5BBEE1", "fillOpacity": 0.5, "weight": 2};
             }
         }
 
-        function geo_json_0eb28a81ac3b5aa7cc1a56a1c2f30b73_onEachFeature(feature, layer) {
+        function geo_json_970a46ab0ad6bf831daa71008107aefa_onEachFeature(feature, layer) {
 
             layer.on({
             });
         };
-        var geo_json_0eb28a81ac3b5aa7cc1a56a1c2f30b73 = L.geoJson(null, {
-                onEachFeature: geo_json_0eb28a81ac3b5aa7cc1a56a1c2f30b73_onEachFeature,
+        var geo_json_970a46ab0ad6bf831daa71008107aefa = L.geoJson(null, {
+                onEachFeature: geo_json_970a46ab0ad6bf831daa71008107aefa_onEachFeature,
             
-                style: geo_json_0eb28a81ac3b5aa7cc1a56a1c2f30b73_styler,
+                style: geo_json_970a46ab0ad6bf831daa71008107aefa_styler,
             ...{
 }
         });
 
-        function geo_json_0eb28a81ac3b5aa7cc1a56a1c2f30b73_add (data) {
-            geo_json_0eb28a81ac3b5aa7cc1a56a1c2f30b73
+        function geo_json_970a46ab0ad6bf831daa71008107aefa_add (data) {
+            geo_json_970a46ab0ad6bf831daa71008107aefa
                 .addData(data);
         }
-            geo_json_0eb28a81ac3b5aa7cc1a56a1c2f30b73_add({"features": [{"geometry": {"coordinates": [[[-0.0902390999999998, 51.5102692], [-0.0937863999999995, 51.51058270000001], [-0.09495790000000033, 51.51075449999999], [-0.09552119999999996, 51.51093110000001], [-0.09716390000000019, 51.5115167], [-0.0980323000000002, 51.5120004], [-0.09982040000000102, 51.513976599999985], [-0.10065790000000074, 51.5158292], [-0.10042769999999969, 51.5166722], [-0.09907230000000031, 51.517739999999996], [-0.09719440000000112, 51.518741599999984], [-0.09277900000000051, 51.5200637], [-0.08739699999999918, 51.5200907], [-0.08427079999999931, 51.51783400000001], [-0.08268240000000221, 51.515071299999995], [-0.08274220000000163, 51.51431409999999], [-0.08593659999999968, 51.51107539999999], [-0.08639159999999936, 51.51067919999999], [-0.08656410000000157, 51.5106511], [-0.0902390999999998, 51.5102692]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+            geo_json_970a46ab0ad6bf831daa71008107aefa_add({"features": [{"geometry": {"coordinates": [[[-0.0902390999999998, 51.5102692], [-0.0937863999999995, 51.51058270000001], [-0.09495790000000033, 51.51075449999999], [-0.09552119999999996, 51.51093110000001], [-0.09716390000000019, 51.5115167], [-0.0980323000000002, 51.5120004], [-0.09982040000000102, 51.513976599999985], [-0.10065790000000074, 51.5158292], [-0.10042769999999969, 51.5166722], [-0.09907230000000031, 51.517739999999996], [-0.09719440000000112, 51.518741599999984], [-0.09277900000000051, 51.5200637], [-0.08739699999999918, 51.5200907], [-0.08427079999999931, 51.51783400000001], [-0.08268240000000221, 51.515071299999995], [-0.08274220000000163, 51.51431409999999], [-0.08593659999999968, 51.51107539999999], [-0.08639159999999936, 51.51067919999999], [-0.08656410000000157, 51.5106511], [-0.0902390999999998, 51.5102692]]], "type": "Polygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
 
         
     
-            geo_json_0eb28a81ac3b5aa7cc1a56a1c2f30b73.bindTooltip(
+            geo_json_970a46ab0ad6bf831daa71008107aefa.bindTooltip(
                 `<div>
                      10 minuts walking
                  </div>`,
@@ -252,10 +252,10 @@
             );
         
     
-            geo_json_0eb28a81ac3b5aa7cc1a56a1c2f30b73.addTo(map_032585fac13ec2c44991c744dcdf40c9);
+            geo_json_970a46ab0ad6bf831daa71008107aefa.addTo(map_5e0a240b594d24045b77f11590070e92);
         
     
-            var fast_marker_cluster_320d8db849170342d15be4cdd9aa82e2 = (function(){
+            var fast_marker_cluster_59b4d8795dbca90ffe04fc79344398f6 = (function(){
                 var callback = 
         function (row) {
             var marker = L.marker(new L.LatLng(row[0], row[1]), {
@@ -274,7 +274,7 @@
         }
         ;
 
-                var data = [[51.52005, -0.08199059, "Gym, Studios, Swimming Pool"], [51.50995, -0.09136442, "Gym, Squash, Studios, Swimming Pool"], [51.52027, -0.09713112, "Gym, Studios, Swimming Pool"], [51.50586, -0.08481961, "Gym, Squash, Studios, Swimming Pool"], [51.52833, -0.08160491, "Gym, Studios"], [51.51129, -0.07616183, "Gym, Studios"], [51.51128, -0.08505423, "Gym, Studios"], [51.51743, -0.1187548, "Gym, Studios"], [51.51761, -0.08070943, "Gym, Studios"], [51.51726, -0.07836043, "Gym, Studios"], [51.51199, -0.1058295, "Gym, Studios"], [51.51853, -0.08401491, "Gym, Studios"], [51.51263, -0.07904536, "Gym, Studios"], [51.52467, -0.09035932, "Gym, Studios"], [51.51189, -0.07482473, "Gym, Studios, Swimming Pool"], [51.52303, -0.08967868, "Gym, Squash, Studios, Swimming Pool"], [51.51164, -0.07268793, "Gym"], [51.51712, -0.09847333, "Gym, Studios, Swimming Pool"], [51.52144, -0.09113458, "Gym, Squash, Studios"], [51.50908, -0.08739172, "Gym, Squash"], [51.51942, -0.08519708, "Gym, Squash, Studios"], [51.51883, -0.07541157, "Gym, Squash, Studios"], [51.50303, -0.08424757, "Gym, Studios, Swimming Pool"], [51.5042, -0.1093018, "Gym, Studios"], [51.52134, -0.0969239, "Gym, Studios"], [51.51192, -0.1193851, "Gym, Swimming Pool"], [51.5057, -0.1050733, "Football, Gym, Sports Hall, Studios, Tennis"], [51.52612, -0.09512836, "Football, Gym, Sports Hall, Squash, Studios"], [51.52259, -0.09650104, "Gym, Sports Hall, Studios, Swimming Pool, Tennis"], [51.52658, -0.0945758, "Gym, Squash, Studios, Swimming Pool"], [51.52546, -0.07969952, "Gym, Studios, Swimming Pool"], [51.52486, -0.09904441, "Gym, Sports Hall, Squash, Studios"], [51.50525, -0.08017489, "Gym, Studios, Swimming Pool"], [51.51072, -0.07654612, "Gym, Studios, Swimming Pool"], [51.51486, -0.1093639, "Gym, Studios"], [51.50518, -0.0880117, "Gym, Studios"], [51.51526, -0.08399344, "Gym, Studios, Swimming Pool"], [51.51733, -0.1177643, "Gym"], [51.5274, -0.09665392, "Gym, Swimming Pool"], [51.52053, -0.1179644, "Gym, Studios, Swimming Pool"], [51.51934, -0.08954485, "Gym, Squash, Studios, Swimming Pool"], [51.51313, -0.0799667, "Gym, Studios, Swimming Pool"], [51.51264, -0.1193555, "Gym, Studios, Swimming Pool"], [51.5117, -0.09709238, "Gym, Studios"], [51.51488, -0.1001664, "Gym, Studios"], [51.51788, -0.07291464, "Football, Sports Hall"], [51.51788, -0.1188515, "Gym, Studios"], [51.50603, -0.09998721, "Gym, Studios"], [51.51477, -0.08539801, "Gym, Studios, Swimming Pool"], [51.51656, -0.1079229, "Gym, Studios"], [51.51694, -0.08810297, "Gym, Studios, Swimming Pool"], [51.52236, -0.1082447, "Gym, Studios, Swimming Pool"], [51.50352, -0.08146024, "Gym, Studios"], [51.52962, -0.08356353, "Gym"], [51.52205, -0.1061095, "Gym, Studios"], [51.5241, -0.1001863, "Gym, Studios"], [51.50469, -0.08894768, "Gym, Swimming Pool"], [51.50644, -0.1082703, "Gym, Sports Hall"], [51.51275, -0.09937578, "Gym, Studios, Swimming Pool"], [51.50414, -0.08054103, "Gym"], [51.51175, -0.07161779, "Gym, Studios, Swimming Pool"], [51.51524, -0.09033495, "Gym"], [51.50063, -0.09078716, "Gym, Studios"], [51.51285, -0.08751056, "Gym, Studios"], [51.51779, -0.09776787, "Gym, Studios, Swimming Pool"], [51.51509, -0.1168908, "Gym, Sports Hall, Squash"], [51.52192, -0.08560241, "Gym"], [51.50314, -0.08413651, "Sports Hall"], [51.52195, -0.08024726, "Football"], [51.52713, -0.07969715, "Football"], [51.50288, -0.08585343, "Swimming Pool"], [51.50438, -0.101398, "Gym, Studios"], [51.51761, -0.07721265, "Gym, Studios"], [51.51079, -0.1169323, "Sports Hall"], [51.51379, -0.1089026, "Gym"], [51.51667, -0.09374986, "Sports Hall"], [51.51366, -0.07745964, "Sports Hall"], [51.52032, -0.1057048, "Gym, Studios"], [51.50452, -0.09548192, "Gym, Studios"], [51.52995, -0.1030422, "Gym"], [51.50844, -0.1067245, "Gym"], [51.5133, -0.07207905, "Gym, Studios"], [51.51455, -0.0771053, "Gym, Studios"], [51.51464, -0.1175726, "Gym, Studios"], [51.52304, -0.07696843, "Football"], [51.51366, -0.1020548, "Gym, Studios"], [51.52558, -0.08939905, "Gym, Studios"], [51.51173, -0.09026672, "Gym, Studios"], [51.5151, -0.0829711, "Gym, Studios, Swimming Pool"], [51.52471, -0.09912281, "Gym, Sports Hall, Studios"], [51.52375, -0.07589684, "Gym, Studios, Swimming Pool"], [51.51449, -0.09284651, "Gym, Studios"], [51.51102, -0.0993612, "Football, Gym, Sports Hall, Squash, Swimming Pool"], [51.52526, -0.08582266, "Football, Gym, Sports Hall"], [51.5151, -0.07344997, "Gym, Sports Hall"], [51.51746, -0.0658985, "Studios"], [51.52345, -0.1056454, "Sports Hall"], [51.52318, -0.08749552, "Football"], [51.5172, -0.06653027, "Gym"], [51.51913, -0.0944832, "Football, Gym, Sports Hall, Swimming Pool, Tennis"], [51.50532, -0.0991376, "Gym"], [51.50212, -0.1003227, "Gym, Studios"], [51.52465, -0.07840945, "Studios"], [51.51203, -0.06888121, "Gym, Studios"], [51.51519, -0.07996733, "Gym, Studios"], [51.50079, -0.07887409, "Gym"], [51.52208, -0.08628746, "Gym"], [51.51894, -0.1088044, "Gym, Studios"], [51.5033, -0.09071364, "Gym, Studios"], [51.50167, -0.09975202, "Football"], [51.51292, -0.1177278, "Gym, Studios"], [51.51511, -0.09034175, "Studios"], [51.52565, -0.1068395, "Football"], [51.52986, -0.08917616, "Football"], [51.50336, -0.09282168, "Football"], [51.51768, -0.06514861, "Gym"], [51.50914, -0.08478998, "Gym"], [51.5124, -0.08721826, "Gym"], [51.50164, -0.09907138, "Football, Sports Hall, Studios"], [51.511, -0.08636466, "Gym"], [51.5238, -0.07243741, "Gym"], [51.51051, -0.08932959, "Gym"]];
+                var data = [[51.52005, -0.08199059, "Gym, Studios, Swimming Pool"], [51.50995, -0.09136442, "Gym, Squash, Studios, Swimming Pool"], [51.52027, -0.09713112, "Gym, Studios, Swimming Pool"], [51.50586, -0.08481961, "Gym, Squash, Studios, Swimming Pool"], [51.52833, -0.08160491, "Gym, Studios"], [51.51129, -0.07616183, "Gym, Studios"], [51.51128, -0.08505423, "Gym, Studios"], [51.51743, -0.1187548, "Gym, Studios"], [51.51761, -0.08070943, "Gym, Studios"], [51.51726, -0.07836043, "Gym, Studios"], [51.51199, -0.1058295, "Gym, Studios"], [51.51853, -0.08401491, "Gym, Studios"], [51.51263, -0.07904536, "Gym, Studios"], [51.52467, -0.09035932, "Gym, Studios"], [51.51189, -0.07482473, "Gym, Studios, Swimming Pool"], [51.52303, -0.08967868, "Gym, Squash, Studios, Swimming Pool"], [51.51164, -0.07268793, "Gym"], [51.51712, -0.09847333, "Gym, Studios, Swimming Pool"], [51.52144, -0.09113458, "Gym, Squash, Studios"], [51.50908, -0.08739172, "Gym, Squash"], [51.51942, -0.08519708, "Gym, Squash, Studios"], [51.51883, -0.07541157, "Gym, Squash, Studios"], [51.50303, -0.08424757, "Gym, Studios, Swimming Pool"], [51.5042, -0.1093018, "Gym, Studios"], [51.52134, -0.0969239, "Gym, Studios"], [51.51192, -0.1193851, "Gym, Swimming Pool"], [51.5057, -0.1050733, "Gym, Outside Pitch, Sports Hall, Studios, Tennis"], [51.52612, -0.09512836, "Gym, Outside Pitch, Sports Hall, Squash, Studios"], [51.52259, -0.09650104, "Gym, Sports Hall, Studios, Swimming Pool, Tennis"], [51.52658, -0.0945758, "Gym, Squash, Studios, Swimming Pool"], [51.52546, -0.07969952, "Gym, Studios, Swimming Pool"], [51.52486, -0.09904441, "Gym, Sports Hall, Squash, Studios"], [51.50525, -0.08017489, "Gym, Studios, Swimming Pool"], [51.51072, -0.07654612, "Gym, Studios, Swimming Pool"], [51.51486, -0.1093639, "Gym, Studios"], [51.50518, -0.0880117, "Gym, Studios"], [51.51526, -0.08399344, "Gym, Studios, Swimming Pool"], [51.51733, -0.1177643, "Gym"], [51.5274, -0.09665392, "Gym, Swimming Pool"], [51.52053, -0.1179644, "Gym, Studios, Swimming Pool"], [51.51934, -0.08954485, "Gym, Squash, Studios, Swimming Pool"], [51.51313, -0.0799667, "Gym, Studios, Swimming Pool"], [51.51264, -0.1193555, "Gym, Studios, Swimming Pool"], [51.5117, -0.09709238, "Gym, Studios"], [51.51488, -0.1001664, "Gym, Studios"], [51.51788, -0.07291464, "Outside Pitch, Sports Hall"], [51.51788, -0.1188515, "Gym, Studios"], [51.50603, -0.09998721, "Gym, Studios"], [51.51477, -0.08539801, "Gym, Studios, Swimming Pool"], [51.51656, -0.1079229, "Gym, Studios"], [51.51694, -0.08810297, "Gym, Studios, Swimming Pool"], [51.52236, -0.1082447, "Gym, Studios, Swimming Pool"], [51.50352, -0.08146024, "Gym, Studios"], [51.52962, -0.08356353, "Gym"], [51.52205, -0.1061095, "Gym, Studios"], [51.5241, -0.1001863, "Gym, Studios"], [51.50469, -0.08894768, "Gym, Swimming Pool"], [51.50644, -0.1082703, "Gym, Sports Hall"], [51.51275, -0.09937578, "Gym, Studios, Swimming Pool"], [51.50414, -0.08054103, "Gym"], [51.51175, -0.07161779, "Gym, Studios, Swimming Pool"], [51.51524, -0.09033495, "Gym"], [51.50063, -0.09078716, "Gym, Studios"], [51.51285, -0.08751056, "Gym, Studios"], [51.51779, -0.09776787, "Gym, Studios, Swimming Pool"], [51.51509, -0.1168908, "Gym, Sports Hall, Squash"], [51.52192, -0.08560241, "Gym"], [51.50314, -0.08413651, "Sports Hall"], [51.52195, -0.08024726, "Outside Pitch"], [51.52713, -0.07969715, "Outside Pitch"], [51.50288, -0.08585343, "Swimming Pool"], [51.50438, -0.101398, "Gym, Studios"], [51.51761, -0.07721265, "Gym, Studios"], [51.51079, -0.1169323, "Sports Hall"], [51.51379, -0.1089026, "Gym"], [51.51667, -0.09374986, "Sports Hall"], [51.51366, -0.07745964, "Sports Hall"], [51.52032, -0.1057048, "Gym, Studios"], [51.50452, -0.09548192, "Gym, Studios"], [51.52995, -0.1030422, "Gym"], [51.50844, -0.1067245, "Gym"], [51.5133, -0.07207905, "Gym, Studios"], [51.51455, -0.0771053, "Gym, Studios"], [51.51464, -0.1175726, "Gym, Studios"], [51.52304, -0.07696843, "Outside Pitch"], [51.51366, -0.1020548, "Gym, Studios"], [51.52558, -0.08939905, "Gym, Studios"], [51.51173, -0.09026672, "Gym, Studios"], [51.5151, -0.0829711, "Gym, Studios, Swimming Pool"], [51.52471, -0.09912281, "Gym, Sports Hall, Studios"], [51.52375, -0.07589684, "Gym, Studios, Swimming Pool"], [51.51449, -0.09284651, "Gym, Studios"], [51.51102, -0.0993612, "Gym, Outside Pitch, Sports Hall, Squash, Swimming Pool"], [51.52526, -0.08582266, "Gym, Outside Pitch, Sports Hall"], [51.5151, -0.07344997, "Gym, Sports Hall"], [51.51746, -0.0658985, "Studios"], [51.52345, -0.1056454, "Sports Hall"], [51.52318, -0.08749552, "Outside Pitch"], [51.5172, -0.06653027, "Gym"], [51.51913, -0.0944832, "Gym, Outside Pitch, Sports Hall, Swimming Pool, Tennis"], [51.50532, -0.0991376, "Gym"], [51.50212, -0.1003227, "Gym, Studios"], [51.52465, -0.07840945, "Studios"], [51.51203, -0.06888121, "Gym, Studios"], [51.51519, -0.07996733, "Gym, Studios"], [51.50079, -0.07887409, "Gym"], [51.52208, -0.08628746, "Gym"], [51.51894, -0.1088044, "Gym, Studios"], [51.5033, -0.09071364, "Gym, Studios"], [51.50167, -0.09975202, "Outside Pitch"], [51.51292, -0.1177278, "Gym, Studios"], [51.51511, -0.09034175, "Studios"], [51.52565, -0.1068395, "Outside Pitch"], [51.52986, -0.08917616, "Outside Pitch"], [51.50336, -0.09282168, "Outside Pitch"], [51.51768, -0.06514861, "Gym"], [51.50914, -0.08478998, "Gym"], [51.5124, -0.08721826, "Gym"], [51.50164, -0.09907138, "Outside Pitch, Sports Hall, Studios"], [51.511, -0.08636466, "Gym"], [51.5238, -0.07243741, "Gym"], [51.51051, -0.08932959, "Gym"]];
                 var cluster = L.markerClusterGroup({
 });
 
@@ -284,22 +284,22 @@
                     marker.addTo(cluster);
                 }
 
-                cluster.addTo(map_032585fac13ec2c44991c744dcdf40c9);
+                cluster.addTo(map_5e0a240b594d24045b77f11590070e92);
                 return cluster;
             })();
         
     
-            fast_marker_cluster_320d8db849170342d15be4cdd9aa82e2.addTo(map_032585fac13ec2c44991c744dcdf40c9);
+            fast_marker_cluster_59b4d8795dbca90ffe04fc79344398f6.addTo(map_5e0a240b594d24045b77f11590070e92);
         
     
-            var marker_45528892b03a3e2174a208764ca0e568 = L.marker(
+            var marker_6d52af18476e138a886fadf793df8245 = L.marker(
                 [51.5156177, -0.0919983],
                 {
 }
-            ).addTo(map_032585fac13ec2c44991c744dcdf40c9);
+            ).addTo(map_5e0a240b594d24045b77f11590070e92);
         
     
-            var icon_b79a7cc5030395f4fbfa1b638344c1ed = L.AwesomeMarkers.icon(
+            var icon_33597ffb2c511033e918f8c794b1122f = L.AwesomeMarkers.icon(
                 {
   "markerColor": "red",
   "iconColor": "white",
@@ -310,24 +310,24 @@
             );
         
     
-        var popup_3e46dca006b25f479197c8402472d94c = L.popup({
+        var popup_66c30b6b54fc86a5b744ab0c8042986b = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_6aa60a424bfade0536935353c2b9c753 = $(`<div id="html_6aa60a424bfade0536935353c2b9c753" style="width: 100.0%; height: 100.0%;">City of London, UK</div>`)[0];
-                popup_3e46dca006b25f479197c8402472d94c.setContent(html_6aa60a424bfade0536935353c2b9c753);
+                var html_9b07faa8082a6798a76bd4f7a0bd2861 = $(`<div id="html_9b07faa8082a6798a76bd4f7a0bd2861" style="width: 100.0%; height: 100.0%;">City of London, UK</div>`)[0];
+                popup_66c30b6b54fc86a5b744ab0c8042986b.setContent(html_9b07faa8082a6798a76bd4f7a0bd2861);
             
         
 
-        marker_45528892b03a3e2174a208764ca0e568.bindPopup(popup_3e46dca006b25f479197c8402472d94c)
+        marker_6d52af18476e138a886fadf793df8245.bindPopup(popup_66c30b6b54fc86a5b744ab0c8042986b)
         ;
 
         
     
     
-                marker_45528892b03a3e2174a208764ca0e568.setIcon(icon_b79a7cc5030395f4fbfa1b638344c1ed);
+                marker_6d52af18476e138a886fadf793df8245.setIcon(icon_33597ffb2c511033e918f8c794b1122f);
             
 </script>
 </html>
